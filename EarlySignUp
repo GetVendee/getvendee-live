@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GetVendee - Auto-Order. Auto-Give.</title>
+  <style>
+    body { background: linear-gradient(#6366F1, #10B981); color: white; font-family: Arial; text-align: center; padding: 60px 20px; }
+    h1 { font-size: 3em; color: #FFD93D; }
+    p, li { font-size: 1.2em; }
+    ul { list-style: none; padding: 0; max-width: 600px; margin: 20px auto; }
+    li { background: rgba(255,255,255,0.1); padding: 12px; border-radius: 8px; margin: 10px 0; }
+    form { background: rgba(255,255,255,0.1); padding: 20px; border-radius: 12px; max-width: 400px; margin: 30px auto; }
+    input, select { width: 100%; padding: 12px; margin: 8px 0; border: none; border-radius: 6px; }
+    button { background: #FFD93D; color: #6366F1; border: none; padding: 15px; font-size: 1.3em; border-radius: 6px; cursor: pointer; width: 100%; }
+    button:hover { background: #FBBF24; }
+    footer { position: fixed; bottom: 0; width: 100%; padding: 15px; font-size: 0.9em; opacity: 0.8; }
+  </style>
+</head>
+<body>
+  <h1>GET VENDEE</h1>
+  <p>Auto-Order. Auto-Give. Life on Autopilot.</p>
+  <p>Set it once. We deliver essentials or donate to your cause — automatically.</p>
+  <ul>
+    <li>Never run out of the essentials – auto-delivered</li>
+    <li>Donate to your charity automatically – hands-free giving</li>
+    <li>Set frequency once – we handle the rest</li>
+    <li>$3 flat fee (personal) / $10 (office/charity)</li>
+    <li>Beta access: Be first to automate life & impact</li>
+  </ul>
+  <form action="https://formspree.io/f/xanlrjgq" method="POST">
+    <input type="text" name="name" placeholder="Name (optional)">
+    <input type="email" name="email" placeholder="Email" required>
+    <select name="interest" required>
+      <option value="" disabled selected>I'm here for...</option>
+      <option value="personal">Personal Ease (auto-order essentials)</option>
+      <option value="giving">Charity Giving (auto-donate)</option>
+    </select>
+    <button type="submit">JOIN BETA – FREE</button>
+  </form>
+  <footer>© 2025 GetVendee | getvendee.com</footer>
+</body>
+</html>
